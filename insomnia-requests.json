@@ -1,0 +1,222 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2025-03-17T20:51:09.610Z",
+  "__export_source": "insomnia.desktop.app:v10.3.1",
+  "resources": [
+    {
+      "_id": "req_99cd905e57d5456e8f0056df74a422e5",
+      "parentId": "fld_85aa8103dc00486e8d4a186bf2651ba3",
+      "modified": 1742242974677,
+      "created": 1742242961288,
+      "url": "http://localhost:8080",
+      "name": "GET CARS",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "preRequestScript": "",
+      "metaSortKey": -1742049091469,
+      "isPrivate": false,
+      "afterResponseScript": "",
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_85aa8103dc00486e8d4a186bf2651ba3",
+      "parentId": "wrk_86a3788a63f648e889d44bcbb3b6a42c",
+      "modified": 1742244608905,
+      "created": 1742242961287,
+      "name": "Cars-Dealership-REST-API",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1742049091470,
+      "preRequestScript": "",
+      "afterResponseScript": "",
+      "authentication": {},
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_86a3788a63f648e889d44bcbb3b6a42c",
+      "parentId": null,
+      "modified": 1742242961283,
+      "created": 1742242961283,
+      "name": "Cars-REST-API",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_c050fbc9e3684fca8c72a96823699ab2",
+      "parentId": "fld_85aa8103dc00486e8d4a186bf2651ba3",
+      "modified": 1742242999852,
+      "created": 1742242961289,
+      "url": "http://localhost:8080/delete",
+      "name": "DELETE CARS BY ID",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "name": "id",
+          "value": "4",
+          "disabled": false,
+          "id": "pair_30c490bc63e84ce4b26bb7c38b0a125f"
+        }
+      ],
+      "headers": [],
+      "authentication": {},
+      "preRequestScript": "",
+      "metaSortKey": -1742049091468,
+      "isPrivate": false,
+      "afterResponseScript": "",
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_47e05f365a4447118670364ff6944086",
+      "parentId": "fld_85aa8103dc00486e8d4a186bf2651ba3",
+      "modified": 1742243889885,
+      "created": 1742242961290,
+      "url": "http://localhost:8080/car",
+      "name": "GET CAR BY ID",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "name": "id",
+          "value": "2",
+          "disabled": false,
+          "id": "pair_e97e8c11f6d842349a7af54b6a92e202"
+        }
+      ],
+      "headers": [],
+      "authentication": {},
+      "preRequestScript": "",
+      "metaSortKey": -1742049091467,
+      "isPrivate": false,
+      "pathParameters": [],
+      "afterResponseScript": "",
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b0a6e8d7a28f4cde83f0099ac9dd549c",
+      "parentId": "fld_85aa8103dc00486e8d4a186bf2651ba3",
+      "modified": 1742243627393,
+      "created": 1742242961292,
+      "url": "http://localhost:8080/add",
+      "name": "ADD CAR",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "[{\n\t\t\"id\": \"7\",\n\t\t\"model\": \"Virtus\",\n\t\t\"brand\": \"Volkswagen\",\n\t\t\"mileage\": \"30.000\",\n\t\t\"price\": \"110.000\"\n},\n {\"id\": \"5\",\n\t\t\"model\": \"Focus\",\n\t\t\"brand\": \"Ford\",\n\t\t\"mileage\": \"130.000\",\n\t\t\"price\": \"50.000\"\n\t}\n]"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "preRequestScript": "",
+      "metaSortKey": -1742049091466,
+      "isPrivate": false,
+      "afterResponseScript": "",
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_839a3ba492314eada7610a56899ff526",
+      "parentId": "fld_85aa8103dc00486e8d4a186bf2651ba3",
+      "modified": 1742243694644,
+      "created": 1742242961292,
+      "url": "http://localhost:8080/update",
+      "name": "UPDATE CAR",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\t\"id\": \"7\",\n\t\t\"model\": \"Virtus\",\n\t\t\"brand\": \"Volkswagen\",\n\t\t\"mileage\": \"35.000\",\n\t\t\"price\": \"110.000\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "preRequestScript": "",
+      "metaSortKey": -1742049091465,
+      "isPrivate": false,
+      "afterResponseScript": "",
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_81d3ec6347d14f8390a04a87d7b73f73",
+      "parentId": "wrk_86a3788a63f648e889d44bcbb3b6a42c",
+      "modified": 1742242961284,
+      "created": 1742242961284,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1742049095699,
+      "environmentType": "kv",
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_d98ede9cd1de4b39b817f7e912995cbc",
+      "parentId": "wrk_86a3788a63f648e889d44bcbb3b6a42c",
+      "modified": 1742242961285,
+      "created": 1742242961285,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_6728418e8ed5425d811bb6324a874640",
+      "parentId": "wrk_86a3788a63f648e889d44bcbb3b6a42c",
+      "modified": 1742242961294,
+      "created": 1742242961286,
+      "fileName": "Cars-REST-API",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
