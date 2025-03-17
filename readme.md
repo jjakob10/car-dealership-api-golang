@@ -53,7 +53,8 @@ Esta é uma API simples para gerenciar um inventário de carros em uma concessio
 1. Certifique-se de ter o [Go](https://golang.org/dl/) instalado.
 2. Clone este repositório.
 3. Navegue até o diretório do projeto.
-4. Execute `go run main.go` para iniciar o servidor.
+4. Execute `go build` para obter o executável
+5. Execute o executável gerado `car-dealership` para iniciar o servidor.
 
 O servidor estará ouvindo na porta `8080`.
 
